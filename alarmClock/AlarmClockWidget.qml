@@ -36,7 +36,7 @@ PluginComponent {
             DankIcon {
                 name: AlarmService.widgetIcon
                 color: Theme.primary
-                size: Theme.iconSize
+                size: Theme.barIconSize(root.barThickness, -4)
                 anchors.verticalCenter: parent.verticalCenter
             }
 
@@ -44,7 +44,7 @@ PluginComponent {
                 anchors.verticalCenter: parent.verticalCenter
                 text: AlarmService.widgetInfo
                 visible: text != ""
-                font.pixelSize: Theme.fontSizeXLarge
+                font.pixelSize: Theme.barTextSize(root.barThickness, root.barConfig?.fontScale)
                 color: Theme.primary
             }
         }
@@ -57,7 +57,7 @@ PluginComponent {
             DankIcon {
                 name: AlarmService.widgetIcon
                 color: Theme.primary
-                size: Theme.iconSize
+                size: Theme.barIconSize(root.barThickness, -4)
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
@@ -65,7 +65,7 @@ PluginComponent {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: AlarmService.widgetInfo
                 visible: text != ""
-                font.pixelSize: Theme.fontSizeXLarge
+                font.pixelSize: Theme.barTextSize(root.barThickness, root.barConfig?.fontScale)
                 color: Theme.primary
             }
         }
